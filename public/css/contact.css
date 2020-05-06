@@ -1,0 +1,119 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.row{
+	margin: 0px;
+}
+
+/*==============================
+=========== nav bar=============
+==============================*/
+.col-nav{
+	padding: 0px;
+}
+.navbar{
+	padding: 0px;
+}
+.navbar-brand{
+	margin-left: 20px;
+	margin-right: 50px;
+}
+.navbar-nav .btn{
+	border-radius: 0px;
+}
+.navbar-nav .btn-cart, .btn-search{
+	padding-top: 15px;
+}
+#bs-navbar-collapse-1 .navbar-direct li{
+	margin-left: 20px;
+}
+
+/*sub menu*/
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.navbar-nav li > ul.dropdown-menu{
+	top: 95%;
+}
+/*end sub menu*/
+
+/*==================================
+========== contact  =================
+==================================*/
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.contact{
+	margin: 20px 0px;
+}
+.contact .mapping{
+	margin-left: 15px;
+	position: relative;
+}
+.contact .mapping button{
+	position: absolute;
+	top: 85%;
+	left: 60px;
+	border-radius: 20px;
+}
+.info-us .find-us,.opening{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.info-us ul{
+	list-style: none;
+}
+.send-us{
+	margin-top: 20px;
+}
+.form-send-us{
+	width: 90%;
+	margin: auto;
+}
+.input-name input{
+	width: 48%;
+}
+.send-us button{
+	border-radius: 20px;
+}
+.send-us h6{
+	margin: 20px 0px;
+}
+
+/*==================================
+========== footer  =================
+==================================*/
+.footer{
+	padding: 70px 70px 20px 70px;
+}
+.footer .download{
+	width: 20%;
+	text-align: right;
+}
+.footer .download img{
+	width: 90px;
+	margin-left: 10px;
+}
+.footer .info{
+	margin-top: 40px;
+}
+.footer .info .item{
+	width: 80%;
+	margin: auto;
+}
+.footer .info ul{
+	list-style: none;
+}
+.footer .info ul li.list-item{
+	cursor: pointer;
+}
+.footer .info ul li.list-item:hover{
+	text-decoration: underline;
+}
+.footer .info ul li button{
+	margin-top: 20px;
+}

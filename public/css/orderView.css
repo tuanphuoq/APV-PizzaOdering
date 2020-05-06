@@ -1,0 +1,10 @@
+.modal-header{
+	display: flex;
+}
+.modal-header .modal-title, .close{
+	width: 50%;
+}
+.chooses .btn-state{
+	width: 60%;
+	margin : 3px 0px;
+}

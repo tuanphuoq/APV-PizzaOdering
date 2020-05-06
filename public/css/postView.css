@@ -1,0 +1,6 @@
+#group-btn{
+	display: flex;
+}
+#group-btn .btn-edit,.btn-del{
+	margin-left: 5px;
+}

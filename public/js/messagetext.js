@@ -1,0 +1,11 @@
+let messageConfirm = 'Are you sure delete record?';
+let deleteSucces = 'Record has been deleted!';
+let cancelDelete = 'Your record is safe!';
+let success = 'success';
+let mTitle = 'title';
+let mImage = 'image';
+let mDescription = 'description';
+let wrongFormat = 'Wrong file format';
+let formatlength = 'Length of product title more than 255 character';
+let formatPrice = 'Price must be number';
+let boundary = 255;

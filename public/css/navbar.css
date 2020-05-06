@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*==============================
+=========== nav bar=============
+==============================*/
+.col-nav{
+	padding: 0px;
+}
+.navbar{
+	padding: 0px;
+}
+.navbar-brand{
+	margin-left: 20px;
+	margin-right: 50px;
+}
+.navbar-nav .btn{
+	border-radius: 0px;
+}
+.navbar-nav .btn-cart, .btn-search{
+	padding-top: 15px;
+}
+#bs-navbar-collapse-1 .navbar-direct li{
+	margin-left: 20px;
+}
+
+/*sub menu*/
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.navbar-nav li > ul.dropdown-menu{
+	top: 95%;
+}
+/*end sub menu*/

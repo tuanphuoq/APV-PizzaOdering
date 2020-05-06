@@ -1,0 +1,264 @@
+*{
+	margin :0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container-fluid{
+	padding: 0px;
+	margin: 0px;
+}
+.row{
+	margin: 0px;
+}
+
+/*==============================
+=========== nav bar=============
+==============================*/
+.col-nav{
+	padding: 0px;
+}
+.navbar{
+	padding: 0px;
+}
+.navbar-brand{
+	margin-left: 20px;
+	margin-right: 50px;
+}
+.navbar-nav .btn{
+	border-radius: 0px;
+}
+.navbar-nav .btn-cart, .btn-search{
+	padding-top: 15px;
+}
+#bs-navbar-collapse-1 .navbar-direct li{
+	margin-left: 20px;
+}
+
+/*sub menu*/
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.navbar-nav li > ul.dropdown-menu{
+	top: 95%;
+}
+/*end sub menu*/
+/*==================================
+==========Banner==================
+==================================*/
+.banner{
+	padding: 0px;
+}
+.banner-item{
+	padding: 0px;
+}
+.banner .right{
+	padding: 150px 40px 0px 40px;
+}
+.banner .right .title-text{
+	font-size: 60px;
+}
+.banner .right .short-text{
+	display: block;
+	margin : 20px 0px;
+	font-size: 25px;
+}
+/*btn join now*/
+.join-now{
+	margin-top: 50px;
+}
+.join-now .item{
+}
+.btn-click{
+	/*height: 60px;*/
+	/*width: 180px;*/
+	margin-top: 50px;
+	padding: 10px 30px;
+	border-radius: 40px;
+}
+
+/*==================================
+==========How we do it==============
+==================================*/
+.how-do-it{
+	margin-top: 50px;
+}
+.how-do-it .steps{
+	margin-top: 40px;
+}
+.how-do-it .steps h4{
+	margin-top: 20px;
+}
+.how-do-it .steps .content{
+	margin-top: 30px;
+}
+.how-do-it .btn-order{
+	margin: auto;
+}
+
+/*==================================
+========== Pizza      ==============
+==================================*/
+.pizza{
+	margin-top: 100px;
+}
+.pizza .left{
+	padding-left: 50px;
+}
+.pizza .left >h6{
+	margin-top: 30px;
+}
+.pizza .right{
+	text-align: center;
+}
+
+/*==================================
+========== Trending   ==============
+==================================*/
+.trending{
+	margin-top: 60px;
+}
+.trending h3,h6{
+	margin-bottom: 20px;
+}
+.offers{
+	margin-top: 10px;
+}
+.offers .offers-item{
+	margin-top: 20px;
+}
+.offers-item .item{
+	width: 80%;
+	border-radius: 10px;
+	text-align: center;
+}
+.offers-item .item .btn-choose{
+	padding: 20px;
+}
+.offers-item .item .btn-choose button{
+	margin: 0px 5px;
+	padding: 5px 15px;
+	border-radius: 18px;
+}
+.text-center button{
+	margin: 0px 5px;
+	border-radius: 25px;
+	border: 1px solid #DBD9D9;
+} 
+.trending .pagination{
+	margin-top: 10px;
+	width: 100%;
+}
+.trending .pagination button{
+	margin: 10px;
+	border-radius: 50%;
+	border: 1px solid #DBD9D9;
+}
+
+/*==================================
+========== Great offers ============
+==================================*/
+.great-offer{
+	margin-top: 50px;
+	padding: 40px;
+}
+.great-offer .content{
+	margin-top: 30px;
+}
+
+/*==================================
+========== Great offers ============
+==================================*/
+.our-backbone{
+	margin-top: 50px;
+}
+.backbone .backbone-item{
+	margin-top: 20px;
+}
+.backbone .b-bone{
+	width: 70%;
+	text-align: center;
+	padding: 15px;
+	border-radius: 15px;
+}
+.backbone .b-bone img{
+	width: 50%;
+	margin-bottom: 10px;
+}
+.backbone .b-bone h6{
+	font-weight: 400;
+}
+/*==================================
+========== join our==== ============
+==================================*/
+.join-our{
+	margin-top: 50px;
+	background-image: url("../images/tuantt/bg-email.jpg");
+	background-repeat: no-repeat;
+	/*height: 600px;*/
+	background-size: cover;
+}
+.join-our .form-email{
+	width: 45%;
+	height: 400px;
+	margin: 100px 0px 50px 50px;
+	padding: 50px 40px;
+	border-radius: 20px;
+}
+.join-our .form-email h6{
+	margin-top: 20px;
+}
+.join-our .form-email .form-group{
+	margin-top: 40px;
+}
+.join-our .form-email .form-group{
+	width: 90%;
+}
+.join-our .form-email button{
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 880px){
+	.join-our .form-email{
+		width: 80%;
+		/*margin: auto;*/
+		margin: 30px 0px 15px 30px;
+		padding: 15px 10px;
+	}
+	.join-our .form-email .form-group{
+		margin-top: 15px;
+	}
+}
+
+/*==================================
+========== footer  =================
+==================================*/
+.footer{
+	padding: 70px 70px 20px 70px;
+}
+.footer .download{
+	width: 20%;
+	text-align: right;
+}
+.footer .download img{
+	width: 90px;
+	margin-left: 10px;
+}
+.footer .info{
+	margin-top: 40px;
+}
+.footer .info .item{
+	width: 80%;
+	margin: auto;
+}
+.footer .info ul{
+	list-style: none;
+}
+.footer .info ul li.list-item{
+	cursor: pointer;
+}
+.footer .info ul li.list-item:hover{
+	text-decoration: underline;
+}
+.footer .info ul li button{
+	margin-top: 20px;
+}
