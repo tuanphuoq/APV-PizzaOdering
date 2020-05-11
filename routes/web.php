@@ -42,9 +42,6 @@ Route::get('/', function () {
 Route::get('/menu', function () {
 	return view('layouts.menu');
 });
-// Route::get('/test', function () {
-//     return view('content');
-// });
 
 
 Route::get('home', function() {

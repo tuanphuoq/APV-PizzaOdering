@@ -29,6 +29,8 @@ use Hash;
                 public function saveAcc($request){
                     $model = new User();
                     $model->username = $request->username;
+                    $model->name = "Guest";
+                    $model->group_id = 1;
                     $model->email = $request->email;
                     $model->password = Hash::make($request->all()['password']);
                     $model->save();
