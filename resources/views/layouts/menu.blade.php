@@ -61,7 +61,7 @@
 			<div class="row no-gutters slider-text align-items-end justify-content-center">
 				<div class="col-md-9 ftco-animate text-center mb-4">
 					<h1 class="mb-2 bread">Specialties</h1>
-					<p class="breadcrumbs"><span class="mr-2"><a href="#">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Menu <i class="ion-ios-arrow-forward"></i></span></p>
+					<p class="breadcrumbs"><span class="mr-2"><a href="{{route('home')}}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Menu <i class="ion-ios-arrow-forward"></i></span></p>
 					<div class="container">
 						<div class="ftco-search">
 
@@ -113,14 +113,13 @@
 									<div>
 										<div class="d-flex">
 											<div class="one-half">
-												<h3>{{$product->name}}</h3>
+												<h3><a href="{{asset('')}}product-detail/{{$product->id}}">{{$product->name}}</a></h3>
 											</div>
 											<div class="one-forth">
 												<span class="price">{{$product->price}}</span>
 											</div>
 										</div>
 										<p><span>{{$product->description}}</span></p>
-										{{-- <td>{{$product->tag}}</td> --}}
 										<p><a href="{{asset('')}}product-detail/{{$product->id}}" class="btn btn-primary">Order</a></p>
 									</div>
 								</div>

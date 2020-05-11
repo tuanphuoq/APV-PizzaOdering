@@ -63,18 +63,19 @@
 		<section class="content">
 			<section class="row">
 				<section class="col">
-					@foreach($blogs['posts'] as $blog)
-					<section class="box" >
-						<h3 >{{$blog->title}}</h3>
-						<i class="fa fa-calendar-o"> {{$blog->created_at}}</i>
+					@if(isset($blogs['posts']))
+						@foreach($blogs['posts'] as $blog)
+						<section class="box" >
+							<h3 >{{$blog->title}}</h3>
+							<i class="fa fa-calendar-o"> {{$blog->created_at}}</i>
 						
-						<img class="img-post" src="../images/blog/pizza1.jpg">
-						<p class="short-desc">{{$blog->short_desc	}}</p>
-						<a  href="{{asset('')}}blog/{{$blog->id}}"><p class="link-post" >{{__('store.read')}}</p></a>
-					</section>
-					@endforeach	
-					{{$blogs['posts']->links()}}
-					
+							<img class="img-post" src="../images/blog/pizza1.jpg">
+							<p class="short-desc">{{$blog->short_desc	}}</p>
+							<a  href="{{asset('')}}blog/{{$blog->id}}"><p class="link-post" >{{__('store.read')}}</p></a>
+						</section>
+						@endforeach	
+						{{$blogs['posts']->links()}}
+					@endif
 				</section>
 				
 				<section class="col">
@@ -84,14 +85,15 @@
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
 					<h3 class="search-p">{{__('store.recent')}}</h3>
-					@foreach($blogs['newPost'] as $blog)
-					<section class="box1">
-						<img class="img-post-v" src="../images/blog/image_1.jpg">
-						<h6><a href="{{asset('')}}blog/{{$blog->id}}">{{$blog->title}}</a> </h6>
-						 <div><a href="#" class="icon-cal"><span class="fa fa-calendar-o"></span>{{$blog->created_at}}</a></div>
-					</section>
-					@endforeach
-
+					@if(isset($blogs['posts']))
+						@foreach($blogs['newPost'] as $blog)
+						<section class="box1">
+							<img class="img-post-v" src="../images/blog/image_1.jpg">
+							<h6><a href="{{asset('')}}blog/{{$blog->id}}">{{$blog->title}}</a> </h6>
+							 <div><a href="#" class="icon-cal"><span class="fa fa-calendar-o"></span>{{$blog->created_at}}</a></div>
+						</section>
+						@endforeach
+					@endif
 
 				</section>
 				

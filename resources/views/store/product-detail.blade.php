@@ -23,22 +23,22 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item">
-					<a class="nav-link" href="#">{{__('store.menu_home')}}</a>
+					<a class="nav-link" href="{{route('home')}}">{{__('store.menu_home')}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">{{__('store.menu_blog')}}</a>
+					<a class="nav-link" href="{{asset('')}}blog">{{__('store.menu_blog')}}</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">{{__('store.menu_pages')}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">{{__('store.menu_menu')}}</a>
+					<a class="nav-link" href="{{asset('')}}menu">{{__('store.menu_menu')}}</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">{{__('store.menu_location')}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">{{__('store.menu_contact')}}</a>
+					<a class="nav-link" href="{{route('contact')}}">{{__('store.menu_contact')}}</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">

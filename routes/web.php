@@ -12,44 +12,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/menu', function () {
-//     return view('layouts.menu');
-// });
-// Route::get('/test', function () {
-//     return view('content');
-// });
-
-Route::get('product-detail/{id}', 'ProductController@show');
-
-//show list products in user page
-Route::get('layouts.menu', 'ProductController@list');
-
-
 Auth::routes();
-
-//show list users in admin page
-Route::get('test', 'UserController@index');
-
-
-Auth::routes();
-
-
-Route::get('/', function () {
-	return view('welcome');
-});
-
-Route::get('/menu', function () {
-	return view('layouts.menu');
-});
-
-
-Route::get('home', function() {
-	return view('store.homepage');
-})->name('home');
-Route::get('contact', function() {
-	return view('store.contact');
-})->name('contact');
 
 Route::get('product-detail/{id}', 'ProductController@show');
 
@@ -59,10 +22,6 @@ Route::group(['prefix' => 'cart'], function() {
 	Route::get('/{id}', 'OrderController@destroyItems');
 	Route::post('/add', 'OrderController@addcart');
 });
-//test blade
-Route::get('v1', function(){
-	return view('store.homepage');
-});	
 
 //group route product
 Route::group(['prefix' => 'product','middleware' => ['admin.check']], function() {
@@ -159,4 +118,25 @@ Route::group(['prefix' => 'post'], function() {
 	Route::post('delete/{id}', 'PostController@deletePost');
 });
 
+Route::get('blog', function() {
+    return view("store.blog");
+});
+
+Route::get('/', function () {
+	// return view('welcome');
+	return view('store.homepage');
+});
+
+// //show list products in user page
+Route::get('menu', 'ProductController@list');
+
+Route::get('home', function() {
+	return view('store.homepage');
+})->name('home');
+
+Route::get('contact', function() {
+	return view('store.contact');
+})->name('contact');
+
+Route::get('product-detail/{id}', 'ProductController@show');
 

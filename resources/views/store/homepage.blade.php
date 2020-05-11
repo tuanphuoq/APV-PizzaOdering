@@ -50,7 +50,7 @@
 								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li><a class="dropdown-item" href="{{asset('')}}menu">Menu 1</a></li>
-									<li><a class="dropdown-item" href="{{asset('')}}layouts.menu">Products</a></li>	
+									<li><a class="dropdown-item" href="{{asset('')}}menu">Products</a></li>	
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -64,7 +64,8 @@
 						</ul>
 						<!-- menu right -->
 						<ul class="navbar-nav ml-md-auto navbar-nav-right">
-							@if(Auth::user())
+							{{-- //Hello user --}}
+							{{-- @if(Auth::user())
 	                			@if(Auth::user()->group_id == 2)
 	                			<a href="#" class="btn btn-success btn-block">
 	                				Hello: {{Auth::user()->username}}</a>
@@ -73,9 +74,9 @@
                 			@else   
 	                			<a href="{{route('auth.login')}}" class="btn btn-danger btn-block">Login</a>
 	                			<a href="{{route('register')}}" class="btn btn-info btn-block">Register</a>
-                			@endif
+                			@endif --}}
 							<li class="nav-item btn btn-danger btn-order">
-								<a class="nav-link text-white font-weight-bold text-uppercase" href="{{asset('')}}layouts.menu">order online</a>
+								<a class="nav-link text-white font-weight-bold text-uppercase" href="{{asset('')}}menu">order online</a>
 							</li>
 							<li class="nav-item btn btn-dark btn-cart">
 								<a class="text-light" href="{{asset('')}}cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
