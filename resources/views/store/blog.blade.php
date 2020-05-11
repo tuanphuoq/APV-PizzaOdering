@@ -48,7 +48,7 @@
 			  			<a href="#" class="link-item">{{__('store.menu_pages')}}</a>
 			  		</li>
 			  		<li>
-			  			<a href="{{asset('')}}layouts.menu" class="link-item">{{__('store.menu_menu')}}</a>
+			  			<a href="{{asset('')}}menu" class="link-item">{{__('store.menu_menu')}}</a>
 			  		</li>
 			  		<li>
 			  			<a href="#" class="link-item" >{{__('store.menu_location')}}</a>
@@ -63,7 +63,7 @@
 		<section class="content">
 			<section class="row">
 				<section class="col">
-					@if(isset($blogs['posts']))
+					@if(!empty($blogs['posts']))
 						@foreach($blogs['posts'] as $blog)
 						<section class="box" >
 							<h3 >{{$blog->title}}</h3>

@@ -26,7 +26,7 @@ class CategoryController extends Controller
             $this->categoryService->changeImage($req, $id);
             $this->categoryService->saveCategory($req, $id);
 
-            Session::flash('message', __('msg.updatesuccess');
+            Session::flash('message', __('msg.updatesuccess'));
 
             return redirect()->route('category');
         }
@@ -47,7 +47,7 @@ class CategoryController extends Controller
     public function addCategory(Request $req)
     {
         if ($this->categoryService->createCategory($req)) {
-            Session::flash('message', __('msg.addsuccess');
+            Session::flash('message', __('msg.addsuccess'));
 
             return redirect()->route('category');
         }

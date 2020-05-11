@@ -48,8 +48,8 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<li><a class="dropdown-item" href="{{asset('')}}layouts.menu">Menu 1</a></li>
-									<li><a class="dropdown-item" href="{{asset('')}}layouts.menu">Menu 2</a></li>	
+									<li><a class="dropdown-item" href="{{asset('')}}menu">Menu 1</a></li>
+									<li><a class="dropdown-item" href="{{asset('')}}menu">Menu 2</a></li>	
 								</ul>
 							</li>
 							<li class="nav-item">

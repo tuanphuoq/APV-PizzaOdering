@@ -49,7 +49,7 @@
 			
 			<div class="content-right">
 				<h1 class="title-login">Login</h1>
-				<form action="{{route('auth.post-login')}}" method="post">
+				<form action="{{route('login')}}" method="post">
 					@csrf
 					<div class="form-input">
 						<input type="text" name="username" placeholder="Username"><br>

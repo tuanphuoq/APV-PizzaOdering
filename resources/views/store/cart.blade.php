@@ -32,7 +32,7 @@
 					<a class="nav-link" href="#">{{__('store.menu_pages')}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{asset('')}}layouts.menu">{{__('store.menu_menu')}}</a>
+					<a class="nav-link" href="{{asset('')}}menu">{{__('store.menu_menu')}}</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">{{__('store.menu_location')}}</a>

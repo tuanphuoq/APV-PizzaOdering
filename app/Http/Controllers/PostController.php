@@ -86,4 +86,6 @@ class PostController extends Controller
             return view('pages.viewPost', compact('data'), compact('maybe'));
         }
     }
+
+    //todo show post in user page
 }
