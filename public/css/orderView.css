@@ -8,3 +8,22 @@
 	width: 60%;
 	margin : 3px 0px;
 }
+.choose-date{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.choose-date > h5.title{
+	font-weight : 700;
+	margin-bottom : 20px;
+}
+.choose-date input{
+	height : 34px !important;
+}
+.choose-date input{
+	outline: none;
+	height: 100%;
+}
+.choose-date button{
+	outline: none !important;
+}

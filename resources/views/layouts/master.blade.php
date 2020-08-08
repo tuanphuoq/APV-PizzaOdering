@@ -22,12 +22,14 @@
    
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
    @yield('css')
+   {{-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> --}}
    
    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <script src="//code.jquery.com/jquery.js"></script>
+   {{-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> --}}
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
@@ -356,7 +358,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         </li>
          <li>
           <a href="{{route('category')}}">
-            <i class="fa fa-th"></i> <span>Category</span>
+            <i class="fa fa-tags" aria-hidden="true"></i> <span>Category</span>
             {{-- <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span> --}}
@@ -364,7 +366,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         </li>
         <li>
           <a href="{{route('order')}}">
-            <i class="fa fa-th"></i> <span>Order</span>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Order</span>
             {{-- <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span> --}}
@@ -372,7 +374,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         </li>
         <li>
           <a href="{{route('topping')}}">
-            <i class="fa fa-th"></i> <span>Topping</span>
+            <i class="fa fa-align-justify" aria-hidden="true"></i> <span>Topping</span>
             {{-- <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span> --}}
@@ -385,6 +387,18 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
               <small class="label pull-right bg-green">new</small>
             </span> --}}
           </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-line-chart" aria-hidden="true"></i> <span>Statistic</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('statistic')}}"><i class="fa fa-circle-o"></i>Order Statistic</a></li>
+            <li><a href=""><i class="fa fa-circle-o"></i>Revenue Statistic</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="">
@@ -423,6 +437,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 <!-- jQuery 3 -->
 
 <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> --}}
 
 <!-- Bootstrap 3.3.7 -->
 <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
@@ -440,7 +455,6 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
-
 <script src="{{asset('dist/js/demo.js')}}"></script>
 @yield('foot')
 

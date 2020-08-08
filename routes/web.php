@@ -29,6 +29,10 @@ Route::get('/logout','AccountController@logout')->name('logout');
 Route::group(['middleware'=>'auth'], function(){
 	//group route product
 	// Route::group(['prefix' => 'product','middleware' => ['admin.check']], function() {
+	Route::group(['prefix' => 'admin'], function() {
+		Route::get('/', 'ProductController@view')->name('product');
+	});
+
 	Route::group(['prefix' => 'product'], function() {
 		Route::get('/', 'ProductController@view')->name('product');
 
@@ -51,6 +55,14 @@ Route::group(['middleware'=>'auth'], function(){
 		Route::get('/', 'OrderController@view')->name('order');
 		Route::get('state', 'OrderController@changeState')->name('changeState');
 		Route::post('/add', 'OrderController@storeOrder');
+	});
+
+	//group route product
+	Route::group(['prefix' => 'statistic'], function() {
+		Route::get('/', 'StatisticController@view')->name('statistic');
+		Route::get('order', 'StatisticController@statisticOrder')->name('statistic.order');
+		// Route::get('state', 'OrderController@changeState')->name('changeState');
+		// Route::post('/add', 'OrderController@storeOrder');
 	});
 
 
