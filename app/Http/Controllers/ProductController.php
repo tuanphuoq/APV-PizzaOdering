@@ -106,5 +106,15 @@ class ProductController extends Controller
         return view("layouts.menu", ['products'=>$products]);
     }
 
+    public function search(Request $request)
+    {
+    	$result = $this->productService->searchByTag($request);
+    	if($result != null) {
+    		return response()->json(['data' => $result]);
+    	} else {
+    		return response()->json(['data' => null]);
+    	}
+    }
+
 }
 

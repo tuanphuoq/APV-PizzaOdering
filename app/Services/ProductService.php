@@ -290,4 +290,14 @@ class ProductService
 
         return $products;
     }
+
+    public function searchByTag($request)
+    {
+    	$records = Product::where('tag', '=', $request->tag)->get();
+    	if(count($records) > 0) {
+    		return $records;
+    	} else {
+    		return null;
+    	}
+    }
 }

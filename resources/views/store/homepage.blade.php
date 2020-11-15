@@ -82,7 +82,7 @@
 								<a class="text-light" href="{{asset('')}}cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 							</li>
 							<li class="nav-item btn btn-dark btn-search">
-								<a class="text-light" href="#"><i class="fa fa-search"></i></a>
+								<a class="text-light" href="{{asset('')}}menu"><i class="fa fa-search"></i></a>
 							</li>
 						</ul>
 					</div>

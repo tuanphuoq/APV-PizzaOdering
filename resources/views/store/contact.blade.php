@@ -95,7 +95,7 @@
 						<div class="find-us bg-light">
 							<ul>
 								<li class="text-body">
-									<h5 class="text-capitalize font-weight-bold">find us</h5>
+									<h5 class="text-capitalize font-weight-bold">Longlv</h5>
 								</li>
 								<li class="text-dark text-capitalize">445 Mount Eden Road</li>
 								<li class="text-dark text-capitalize">mount eden</li>

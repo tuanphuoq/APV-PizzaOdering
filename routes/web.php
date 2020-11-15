@@ -137,6 +137,7 @@ Route::get('/', function () {
 
 //show list products in user page
 Route::get('menu', 'ProductController@list');
+Route::get('menu/search', 'ProductController@search')->name('nemu.search');
 
 Route::get('home', function() {
 	return view('store.homepage');

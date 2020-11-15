@@ -7,6 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ URL::asset('/css/animate.css') }}">
 	<link rel="stylesheet" href="{{ URL::asset('/css/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ URL::asset('/css/icomoon.css') }}">
@@ -35,7 +36,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="#">Pizza Home</a>
+			<a class="navbar-brand" href="{{route('home')}}">Pizza Home</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu">Menu</span>
 			</button>
@@ -92,6 +93,19 @@
 
 	</section>
 
+	{{-- search profuct --}}
+	<section>
+		<div class="row" style="padding: 20px 0px;">
+			<div class="container d-flex" style="width : 50%; margin : auto;">
+				<span>Search</span>
+				<a id="search" style="border : 1px solid #c8a97e; padding: 0px 17px; margin-left: 30px; background-color: #c8a97e; color : white; cursor: pointer;">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<input type="text" placeholder="" style="width: 60%; outline: none;" id="search-input">
+			</div>
+		</div>
+	</section>
+
 	<!--==================Show Products==================-->
 
 	<section class="ftco-section">
@@ -100,7 +114,7 @@
 				<div class="tab-content" id="v-pills-tabContent">
 
 					
-					<div class="row no-gutters d-flex align-items-stretch">
+					<div class="row no-gutters d-flex align-items-stretch" id="group-product">
 						@if(empty($products))
 						<h3 class=text-danger>No Data</h3>
 						@else
@@ -257,6 +271,7 @@
 
 
 				<script src="js/main.js"></script>
+				<script src="../js/menu/search.js"></script>
 
 
 			</body>
